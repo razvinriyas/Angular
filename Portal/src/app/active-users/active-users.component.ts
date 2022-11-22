@@ -11,5 +11,6 @@ export class ActiveUsersComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  title= 'Portal'
 
 }
