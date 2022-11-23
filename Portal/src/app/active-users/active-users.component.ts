@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService, Users } from './users.service';
 
 @Component({
   selector: 'app-active-users',
@@ -7,10 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ActiveUsersComponent implements OnInit {
 
-  constructor() { }
+  userlist: Users[] = [];
+  constructor(service: UserService)
+  {
+     this.userlist = service.getUsers();
+  }
+
 
   ngOnInit(): void {
   }
-  title= 'Portal'
+
 
 }
+
+

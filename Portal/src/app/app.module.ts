@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ActiveUsersComponent } from './active-users/active-users.component';
 import { DxButtonModule } from 'devextreme-angular';
+import { DxDataGridModule } from 'devextreme-angular';
+import { DevExtremeModule } from 'devextreme-angular';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,10 @@ import { DxButtonModule } from 'devextreme-angular';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DxButtonModule
+    DxButtonModule,
+    BrowserModule,
+    DxDataGridModule,
+    DevExtremeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
